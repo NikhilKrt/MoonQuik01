@@ -1,0 +1,277 @@
+html{
+	font-size: 10px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	/*line-height: 1.6;*/
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+input{
+	border:none;
+}
+
+.btn {
+	text-transform: uppercase;
+	border: none;
+	background-color: 
+}
+
+.hidden{
+	display: none;
+}
+
+.cover {
+	background-repeat: no-repeat;
+    background-image: url(img/banner2.jpg);
+    background-size: 100% 100%;
+}
+
+.coverCont{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+.coverCont .head {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+}
+
+.coverCont .cover-form {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 8fr 1fr;
+    background-color: #808080b5;
+}
+
+.coverCont .form {
+	grid-column: 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(7,1fr);
+    padding: 40px 0;
+    color: #fff;
+    font-size: 24px;
+    grid-row-gap: 15px;
+}
+
+.coverCont .inputs .input,
+.coverCont .select select {
+    font-size: 26px;
+    width: 100%;
+    text-indent: 20px;
+}
+
+.coverCont .btns .btn{
+	width: 100%;
+    background: #fd5270;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+}
+
+.about {
+	background-repeat: no-repeat;
+    background-image: url(img/aboutCov01.jpg);
+    background-size: 100% 100%;
+}
+
+.aboutCont {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+}
+
+.aboutCont .content{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+}
+
+.aboutCont .content .details {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+.aboutMoreCont, .footerCont {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.aboutMoreCont .items, .footerCont .items{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows:1fr 1fr 1fr; 
+}
+
+.aboutMoreCont .items .item,
+.footerCont .items .item {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+.popCat{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.popCatCont {
+	grid-column: 2;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 30px;
+}
+
+.popCatCont .items{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+} 
+
+.popCatCont .item {	
+	display: grid;
+	grid-template-columns: 1fr;
+    grid-template-rows: 8fr 1fr 1fr;
+}
+
+.popCat .btns{
+    align-self: center;
+}
+
+.popCat .btns a{
+    text-decoration: none;
+    background-color: #fd5270;
+    color: white;
+    padding: 2px 10px;
+    border: 2px solid white;
+}
+
+.browesCatCont {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+.browesCatCont .items{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+.browesCatCont .item{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+}
+
+
+@media screen and (min-width: 768px) {
+	.coverCont {
+	    grid-template-columns: 1fr 1fr;
+	    grid-template-rows: 1fr;
+	}
+
+	.hidden {
+		display: grid;
+	}
+
+	.aboutCont {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.aboutCont .hidden{
+		padding: 35px;
+	}
+
+	.aboutCont .img{
+    	justify-self: center;
+	}
+
+	.aboutCont .img img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.heading {
+	    justify-self: center;
+	    align-self: center;
+	    font-size: 50px;
+	    color: #fd5270;
+	    font-weight: 800;
+	}
+
+	.aboutCont .btn {
+	    background: #fd5270;
+	    color: white;
+	    border: none;
+	    padding: 10px 20px;
+	    font-size: 17px;
+	}
+
+	.aboutMoreCont, .footerCont {
+		display: grid;
+		grid-template-columns: 1fr 8fr 1fr;
+		padding: 40px 0;
+	}
+
+	.aboutMoreCont .items, .footerCont .items{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows:1fr; 
+	    background-color: #c2a2755c;
+    	height: 150px;
+    	grid-column: 2;
+	}
+
+	.footerCont .head{
+		grid-column: 2;
+	}
+
+	.footerCont .items{
+		grid-row: 2;
+	}
+
+	.aboutMoreCont .item .icon,
+	.footerCont .item .icon {
+	    background: green;
+	    width: 60px;
+	    height: 60px;
+	    border-radius: 50%;
+	    justify-self: center;
+	    position: relative;
+	    top: -30%;
+	}
+
+	.popCatCont .items{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 30px;
+	}
+
+	.browseCatCont .items{
+		display: grid;
+    	grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.coverCont {
+	    grid-template-columns: 50% 45% 5%;
+	}
+}
