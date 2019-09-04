@@ -335,11 +335,11 @@ input.input::placeholder,
 .browseCatCont .item{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 2fr;
+	grid-template-rows: 3fr 1fr 4fr;
     background: #908f8f2b;
     color: #534f4f;
     border: 2px solid #f4d2d4;
-    padding: 21px;
+    padding: 20px;
 }
 
 .browseCatCont .item .text{
