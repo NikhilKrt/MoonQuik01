@@ -83,6 +83,7 @@ input.input::placeholder,
 	grid-row: 2;
 }
 
+
 .cover {
 	background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(170, 110, 125, 0.4), rgb(43, 43, 43, 0.7)), url(img/banner01.jpg);
